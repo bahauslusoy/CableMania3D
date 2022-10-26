@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Soket : MonoBehaviour
 {
-    [SerializeField] private bool isFully;
-    [SerializeField] private GameObject movePos ;
+    public bool isFully;
+    public GameObject movePos ;
     void Start()
     {
         
