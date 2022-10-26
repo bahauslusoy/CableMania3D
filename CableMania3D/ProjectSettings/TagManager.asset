@@ -7,6 +7,7 @@ TagManager:
   - Soket
   - Blue_Fis
   - YellowFis
+  - RedFis
   layers:
   - Default
   - TransparentFX

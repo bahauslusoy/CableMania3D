@@ -72,4 +72,12 @@ public class LastFis : MonoBehaviour
         changePos = true;
 
     }
+     public void ComeBackToSocket(GameObject Soket)
+    {
+        soketSelf = Soket;
+
+
+        goSocket = true;
+
+    }
 }

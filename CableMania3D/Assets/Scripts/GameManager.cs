@@ -45,12 +45,20 @@ public class GameManager : MonoBehaviour
                         {
                             selectedSoket.GetComponent<Soket>().isFully = false;
                             Soket soket = hit.collider.GetComponent<Soket>();
-                            selectedObj.GetComponent<LastFis>().ChangePos(soket.movePos,hit.collider.gameObject);
+                            selectedObj.GetComponent<LastFis>().ChangePos(soket.movePos, hit.collider.gameObject);
                             soket.isFully = true;
 
                             selectedObj = null;
                             selectedSoket = null;
-                            
+                            isMove = true;
+
+                        }
+                        else if (selectedSoket == hit.collider.gameObject)
+                        {
+                            selectedObj.GetComponent<LastFis>().ComeBackToSocket(hit.collider.gameObject);
+                            selectedObj = null;
+                            selectedSoket = null;
+                            isMove = true;
                         }
                     }
                 }
